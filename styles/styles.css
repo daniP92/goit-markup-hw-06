@@ -446,6 +446,14 @@ h5 {
   align-items: center;
 }
 
+/* Our team social icons - hover effect */
+/* 
+.icons-our-team .icon-social-media:hover + .icon-social-media svg,
+.icon-social-media svg:hover {
+  fill: #ffffff;
+  background-color: var(--blue-theme-color);
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+} */
 
 .icon-social-media svg:hover,
 .icon-social-media svg:focus {
@@ -459,6 +467,8 @@ h5 {
   background-color: var(--blue-theme-color);
   transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* ---------------------------------- */
 
 .regular-customers {
   display: flex;
@@ -924,7 +934,11 @@ h5 {
 }
 
 .form-group .input:focus + .form-icons,
-.form-group .form-icons:focus {
+.form-group .input:hover:required + .form-icons,
+.form-group .form-icons:focus,
+.form-group .form-icons:hover,
+.form-group .input:hover:required,
+.form-group .input:focus-within {
   border-color: var(--blue-theme-color);
   fill: var(--blue-theme-color);
 }
@@ -962,12 +976,6 @@ h5 {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #757575;
-}
-
-.form-group .input:hover:required,
-.form-group .input:focus-within:required {
-  border-color: #2196F3;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input.arrows::-webkit-outer-spin-button,
