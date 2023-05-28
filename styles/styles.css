@@ -446,17 +446,8 @@ h5 {
   align-items: center;
 }
 
-/* Our team social icons - hover effect */
-/* 
-.icons-our-team .icon-social-media:hover + .icon-social-media svg,
-.icon-social-media svg:hover {
-  fill: #ffffff;
-  background-color: var(--blue-theme-color);
-  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-} */
-
-.icon-social-media svg:hover,
-.icon-social-media svg:focus {
+.icon-social-media:hover svg,
+.icon-social-media:focus svg {
   fill: #ffffff;
   transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -514,8 +505,8 @@ h5 {
   fill: #AFB1B8;
 }
 
-.customer svg:hover,
-.customer svg:focus {
+.customer:hover svg,
+.customer:focus svg {
   fill: var(--blue-theme-color);
   transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
